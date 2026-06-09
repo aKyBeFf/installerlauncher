@@ -160,8 +160,6 @@
     document.querySelectorAll('.langs button').forEach(b =>
         b.addEventListener('click', () => setLang(b.dataset.lang, true)));
 
-    // Гео-определение: Украина/Россия/Беларусь/Казахстан -> русский, остальные страны -> английский.
-    // Украинский остаётся ручным выбором. Сохранённый выбор пользователя всегда важнее.
     const RU_COUNTRIES = ['UA','RU','BY','KZ'];
     function geoDefault(){
         return fetch('https://ipapi.co/json/')
@@ -178,7 +176,7 @@
     if (saved && ['ru','uk','en'].includes(saved)) {
         setLang(saved, false);
     } else {
-        setLang('ru', false);                          // временно, пока не пришёл гео-ответ
+        setLang('ru', false);                         
         geoDefault().then(l => { if (l && !localStorage.getItem('aqb-lang')) setLang(l, false); });
     }
 
