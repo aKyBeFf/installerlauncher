@@ -23,7 +23,7 @@
     .langs button:hover{color:#fff;}
     .langs button.on{background:rgba(46,204,113,.14);border-color:var(--accent);color:var(--accent);}
 
-    /* hero */
+
     header{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 30px;}
     .logo{width:96px;height:96px;border-radius:24px;margin-bottom:18px;
         filter:drop-shadow(0 16px 36px rgba(46,204,113,.4));animation:float 5s ease-in-out infinite;}
@@ -39,7 +39,7 @@
     .btn svg{width:21px;height:21px;}
     .meta{margin-top:12px;font-size:12px;color:var(--muted);font-weight:600;}
 
-    /* features */
+
     section{padding:50px 0;}
     .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
     .card{background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:22px 20px;transition:.2s;}
@@ -180,7 +180,7 @@
         geoDefault().then(l => { if (l && !localStorage.getItem('aqb-lang')) setLang(l, false); });
     }
 
-    // версия из последнего релиза
+
     fetch('https://api.github.com/repos/aKyBeFf/launcher/releases/latest')
         .then(r => r.ok ? r.json() : null)
         .then(d => { if(d && d.tag_name){ const v=document.getElementById('ver');
