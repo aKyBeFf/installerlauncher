@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://akybeff.github.io/installerlauncher/sitemap.xml
