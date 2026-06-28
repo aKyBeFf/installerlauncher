@@ -7,8 +7,8 @@
 
 <!-- ===== SEO ===== -->
 <title>AQB Launcher — лаунчер Minecraft (сборки, моды, друзья)</title>
-<meta name="description" content="AQB Launcher (AQBLauncher) — бесплатный лаунчер Minecraft: сборки в один клик, моды с Modrinth и авто-зависимостями, друзья и чат, авто-обновление. Скачать для Windows.">
-<meta name="keywords" content="AQB Launcher, AQBLauncher, aqblauncher, AQB лаунчер, лаунчер Minecraft, Minecraft launcher, скачать лаунчер майнкрафт, моды minecraft, сборки minecraft">
+<meta name="description" content="AQB Launcher (AQBLauncher) — бесплатный лаунчер Minecraft: готовые сборки с Modrinth и CurseForge в один клик, моды с авто-зависимостями, друзья и чат, авто-обновление. Скачать для Windows.">
+<meta name="keywords" content="AQB Launcher, AQBLauncher, aqblauncher, AQB лаунчер, лаунчер Minecraft, Minecraft launcher, скачать лаунчер майнкрафт, моды minecraft, сборки minecraft, CurseForge, Modrinth">
 <meta name="author" content="AQB">
 <meta name="robots" content="index, follow">
 <meta name="theme-color" content="#2ecc71">
@@ -19,14 +19,13 @@
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="AQB Launcher">
 <meta property="og:title" content="AQB Launcher — лаунчер Minecraft">
-<meta property="og:description" content="Сборки в один клик, моды с авто-зависимостями, друзья и чат, авто-обновление. Скачать для Windows.">
+<meta property="og:description" content="Готовые сборки с Modrinth и CurseForge в один клик, моды с авто-зависимостями, друзья и чат, авто-обновление.">
 <meta property="og:url" content="https://akybeff.github.io/installerlauncher/">
 <meta property="og:image" content="https://akybeff.github.io/installerlauncher/icon.ico">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="AQB Launcher">
 <meta name="twitter:description" content="Лаунчер Minecraft: сборки, моды и друзья.">
 
-<!-- Структурированные данные: помогают Google показать сайт по «AQBLauncher» в любом написании -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -36,7 +35,7 @@
   "applicationCategory": "GameApplication",
   "operatingSystem": "Windows 10, Windows 11",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
-  "description": "Бесплатный лаунчер Minecraft: сборки, моды с авто-зависимостями, друзья и чат, авто-обновление.",
+  "description": "Бесплатный лаунчер Minecraft: готовые сборки с Modrinth и CurseForge, моды с авто-зависимостями, друзья и чат, авто-обновление.",
   "downloadUrl": "https://github.com/aKyBeFf/installerlauncher/releases/download/AQBinstaller/AQBLauncher.Setup.exe",
   "url": "https://akybeff.github.io/installerlauncher/"
 }
@@ -58,7 +57,6 @@
     .langs button:hover{color:#fff;}
     .langs button.on{background:rgba(46,204,113,.14);border-color:var(--accent);color:var(--accent);}
 
-    /* hero */
     header{min-height:88vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:80px 24px 30px;}
     .logo{width:96px;height:96px;border-radius:24px;margin-bottom:18px;
         filter:drop-shadow(0 16px 36px rgba(46,204,113,.4));animation:float 5s ease-in-out infinite;}
@@ -66,24 +64,45 @@
     h1{font-size:clamp(34px,8vw,56px);font-weight:900;letter-spacing:-1px;}
     .ver{font-size:12px;font-weight:800;color:var(--accent);border:1px solid rgba(46,204,113,.4);
         border-radius:7px;padding:2px 8px;vertical-align:middle;margin-left:8px;display:none;}
-    .tagline{color:var(--muted);font-size:clamp(14px,2.4vw,17px);font-weight:600;max-width:440px;margin-top:14px;}
+    .tagline{color:var(--muted);font-size:clamp(14px,2.4vw,17px);font-weight:600;max-width:460px;margin-top:14px;}
     .btn{display:inline-flex;align-items:center;gap:10px;height:56px;padding:0 30px;margin-top:26px;
         background:var(--accent);color:#06210f;border:none;border-radius:15px;font:900 16px Montserrat,sans-serif;
         letter-spacing:.4px;cursor:pointer;transition:.2s;box-shadow:0 14px 34px rgba(46,204,113,.32);}
-    .btn:hover{background:var(--accent-h);transform:translateY(-2px);}
+    .btn:hover{background:var(--accent-h);transform:translateY(-2px);box-shadow:0 18px 44px rgba(46,204,113,.42);}
     .btn svg{width:21px;height:21px;}
     .meta{margin-top:12px;font-size:12px;color:var(--muted);font-weight:600;}
+    .btn2{display:inline-flex;align-items:center;gap:8px;height:44px;padding:0 20px;margin-top:14px;
+        background:var(--glass);color:#fff;border:1px solid var(--border);border-radius:13px;
+        font:800 13px Montserrat,sans-serif;cursor:pointer;transition:.2s;}
+    .btn2:hover{border-color:var(--accent);color:var(--accent);transform:translateY(-2px);}
+    .btn2 svg{width:17px;height:17px;color:var(--accent);}
+    .chips{display:flex;gap:8px;flex-wrap:wrap;justify-content:center;margin-top:22px;}
+    .chip{font:800 11px Montserrat,sans-serif;letter-spacing:.4px;color:rgba(255,255,255,.7);
+        background:var(--glass);border:1px solid var(--border);border-radius:999px;padding:6px 13px;}
 
-    /* features */
-    section{padding:50px 0;}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;}
-    .card{background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:22px 20px;transition:.2s;}
-    .card:hover{border-color:rgba(46,204,113,.35);background:rgba(46,204,113,.05);transform:translateY(-3px);}
+    section{padding:48px 0;}
+    .sec-title{font-size:clamp(22px,4vw,30px);font-weight:900;letter-spacing:-.5px;text-align:center;margin-bottom:6px;}
+    .sec-sub{text-align:center;color:var(--muted);font-size:14px;font-weight:600;margin-bottom:30px;}
+    .accent-text{color:var(--accent);}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;}
+    .card{background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:22px 20px;transition:.25s;}
+    .card:hover{border-color:rgba(46,204,113,.35);background:rgba(46,204,113,.05);transform:translateY(-4px);}
     .card-ico{width:42px;height:42px;border-radius:12px;background:rgba(46,204,113,.12);color:var(--accent);
         display:flex;align-items:center;justify-content:center;margin-bottom:13px;}
     .card-ico svg{width:22px;height:22px;}
     .card h3{font-size:15px;font-weight:800;margin-bottom:5px;}
     .card p{font-size:13px;color:var(--muted);font-weight:500;line-height:1.5;}
+
+    .why{background:linear-gradient(180deg, rgba(46,204,113,.08), rgba(46,204,113,.02));
+        border:1px solid rgba(46,204,113,.22);border-radius:20px;padding:30px clamp(20px,4vw,38px);}
+    .why-list{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px 26px;margin-top:6px;}
+    .why-item{display:flex;gap:12px;align-items:flex-start;}
+    .why-check{flex-shrink:0;width:24px;height:24px;border-radius:8px;background:rgba(46,204,113,.16);color:var(--accent);
+        display:flex;align-items:center;justify-content:center;margin-top:1px;}
+    .why-check svg{width:14px;height:14px;}
+    .why-item b{font-size:14px;font-weight:800;display:block;margin-bottom:2px;}
+    .why-item span{font-size:12.5px;color:var(--muted);font-weight:500;line-height:1.45;}
 
     .steps{display:flex;gap:14px;flex-wrap:wrap;justify-content:center;}
     .step{flex:1;min-width:180px;background:var(--glass);border:1px solid var(--border);border-radius:16px;padding:20px;}
@@ -91,9 +110,23 @@
     .step h3{font-size:14px;font-weight:800;margin:8px 0 4px;}
     .step p{font-size:12.5px;color:var(--muted);font-weight:500;}
 
-    footer{text-align:center;padding:36px 24px 40px;color:var(--muted);font-size:11.5px;line-height:1.6;border-top:1px solid var(--border);}
-    footer a{color:var(--accent);font-weight:700;}
+    .faq{display:flex;flex-direction:column;gap:10px;max-width:760px;margin:0 auto;}
+    .faq details{background:var(--glass);border:1px solid var(--border);border-radius:14px;overflow:hidden;transition:.2s;}
+    .faq details[open]{border-color:rgba(46,204,113,.35);background:rgba(46,204,113,.04);}
+    .faq summary{list-style:none;cursor:pointer;padding:16px 20px;font-size:14.5px;font-weight:800;
+        display:flex;align-items:center;justify-content:space-between;gap:14px;}
+    .faq summary::-webkit-details-marker{display:none;}
+    .faq summary::after{content:"+";font-size:22px;font-weight:700;color:var(--accent);transition:.2s;line-height:1;}
+    .faq details[open] summary::after{transform:rotate(45deg);}
+    .faq .ans{padding:0 20px 17px;font-size:13.5px;color:var(--muted);font-weight:500;line-height:1.6;}
+
+    footer{text-align:center;padding:36px 24px 40px;color:var(--muted);font-size:11.5px;line-height:1.6;border-top:1px solid var(--border);margin-top:30px;}
     .disc{margin-top:8px;opacity:.7;max-width:540px;margin-left:auto;margin-right:auto;}
+
+
+    .reveal{opacity:0;transform:translateY(18px);transition:opacity .6s ease, transform .6s cubic-bezier(.2,.7,.2,1);}
+    .reveal.in{opacity:1;transform:none;}
+    @media (prefers-reduced-motion: reduce){ .reveal{opacity:1;transform:none;transition:none;} .logo{animation:none;} }
 </style>
 </head>
 <body>
@@ -113,24 +146,37 @@
         <span data-i18n="download"></span>
     </a>
     <div class="meta" data-i18n="meta"></div>
+
+    <a class="btn2" id="vt-link" href="https://www.virustotal.com/gui/file/e174290987cc1ff30b480a75559e061c29e7cde1e4bd82cdc9595bd1edf801e7" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+        <span data-i18n="vt"></span>
+    </a>
+
+    <div class="chips">
+        <span class="chip">Modrinth</span>
+        <span class="chip">CurseForge</span>
+        <span class="chip">Forge · Fabric · Quilt · NeoForge</span>
+    </div>
 </header>
 
 <section>
     <div class="wrap">
+        <h2 class="sec-title reveal" data-i18n="feat_title"></h2>
+        <p class="sec-sub reveal" data-i18n="feat_sub"></p>
         <div class="grid">
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><path d="M3.27 6.96 12 12l8.73-5.04"/><path d="M12 22.08V12"/></svg></div>
                 <h3 data-i18n="f1t"></h3><p data-i18n="f1d"></p>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg></div>
                 <h3 data-i18n="f2t"></h3><p data-i18n="f2d"></p>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
                 <h3 data-i18n="f3t"></h3><p data-i18n="f3d"></p>
             </div>
-            <div class="card">
+            <div class="card reveal">
                 <div class="card-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><path d="M21 2v6h-6"/><path d="M3 12a9 9 0 0 1 15-6.7L21 8"/><path d="M3 22v-6h6"/><path d="M21 12a9 9 0 0 1-15 6.7L3 16"/></svg></div>
                 <h3 data-i18n="f4t"></h3><p data-i18n="f4d"></p>
             </div>
@@ -138,49 +184,136 @@
     </div>
 </section>
 
-<section style="padding-top:0;">
+<section>
     <div class="wrap">
+        <h2 class="sec-title reveal" data-i18n="why_title"></h2>
+        <p class="sec-sub reveal" data-i18n="why_sub"></p>
+        <div class="why reveal">
+            <div class="why-list">
+                <div class="why-item"><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="w1t"></b><span data-i18n="w1d"></span></div></div>
+                <div class="why-item"><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="w2t"></b><span data-i18n="w2d"></span></div></div>
+                <div class="why-item"><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="w3t"></b><span data-i18n="w3d"></span></div></div>
+                <div class="why-item"><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="w4t"></b><span data-i18n="w4d"></span></div></div>
+                <div class="why-item"><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="w5t"></b><span data-i18n="w5d"></span></div></div>
+                <div class="why-item"><span class="why-check"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span><div><b data-i18n="w6t"></b><span data-i18n="w6d"></span></div></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="wrap">
+        <h2 class="sec-title reveal" data-i18n="how_title"></h2>
+        <p class="sec-sub reveal" data-i18n="how_sub"></p>
         <div class="steps">
-            <div class="step"><b>1</b><h3 data-i18n="s1t"></h3><p data-i18n="s1d"></p></div>
-            <div class="step"><b>2</b><h3 data-i18n="s2t"></h3><p data-i18n="s2d"></p></div>
-            <div class="step"><b>3</b><h3 data-i18n="s3t"></h3><p data-i18n="s3d"></p></div>
+            <div class="step reveal"><b>1</b><h3 data-i18n="s1t"></h3><p data-i18n="s1d"></p></div>
+            <div class="step reveal"><b>2</b><h3 data-i18n="s2t"></h3><p data-i18n="s2d"></p></div>
+            <div class="step reveal"><b>3</b><h3 data-i18n="s3t"></h3><p data-i18n="s3d"></p></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="wrap">
+        <h2 class="sec-title reveal" data-i18n="faq_title"></h2>
+        <p class="sec-sub reveal" data-i18n="faq_sub"></p>
+        <div class="faq reveal">
+            <details><summary data-i18n="q1"></summary><div class="ans" data-i18n="a1"></div></details>
+            <details><summary data-i18n="q2"></summary><div class="ans" data-i18n="a2"></div></details>
+            <details><summary data-i18n="q3"></summary><div class="ans" data-i18n="a3"></div></details>
+            <details><summary data-i18n="q4"></summary><div class="ans" data-i18n="a4"></div></details>
+            <details><summary data-i18n="q5"></summary><div class="ans" data-i18n="a5"></div></details>
+            <details><summary data-i18n="q6"></summary><div class="ans" data-i18n="a6"></div></details>
         </div>
     </div>
 </section>
 
 <footer>
-    <a href="https://github.com/aKyBeFf/launcher" target="_blank" rel="noopener">GitHub</a>
+    <div data-i18n="footer_made"></div>
     <div class="disc" data-i18n="disc"></div>
 </footer>
 
 <script>
     const I18N = {
-        ru:{ tagline:'Лаунчер Minecraft: сборки, моды и друзья.', download:'Скачать для Windows', meta:'Windows 10 / 11 · бесплатно',
-            f1t:'Сборки в один клик', f1d:'Любая версия и загрузчик. Делись сборкой по коду.',
-            f2t:'Моды с Modrinth', f2d:'Поиск модов, шейдеров, ресурспаков. Зависимости подтянутся сами.',
-            f3t:'Друзья и чат', f3d:'Общайся и смотри, кто сейчас в игре.',
+        ru:{ tagline:'Готовые сборки, моды и друзья — в одном лаунчере.', download:'Скачать для Windows', vt:'Проверка на VirusTotal', meta:'Windows 10 / 11 · бесплатно',
+            feat_title:'Что умеет AQB', feat_sub:'Всё для модов и сборок — без танцев с бубном.',
+            f1t:'Сборки в один клик', f1d:'Готовые паки и свои. Любая версия и загрузчик, шеринг по коду.',
+            f2t:'Моды: Modrinth + CurseForge', f2d:'Поиск модов, шейдеров и ресурспаков с обеих площадок. Зависимости подтянутся сами.',
+            f3t:'Друзья и чат', f3d:'Общайся и смотри, кто сейчас в игре. Сборки можно расшарить.',
             f4t:'Авто-обновление', f4d:'Лаунчер и моды обновляются сами, без перезахода.',
+            why_title:'Чем мы отличаемся', why_sub:'Не очередной лаунчер «скачай и мучайся».',
+            w1t:'Две площадки сразу', w1d:'Modrinth И CurseForge в одном окне — у большинства самодельных лаунчеров только одна.',
+            w2t:'Готовые сборки в 1 клик', w2d:'Каталог популярных паков + импорт .mrpack и CurseForge .zip.',
+            w3t:'Код сборки', w3d:'Копируешь код, кидаешь другу и все скачиваеться само!',
+            w4t:'Соц-часть встроена', w4d:'Друзья, чат, статус «в игре» и общие сборки по коду.',
+            w5t:'Любой вход', w5d:'Microsoft-лицензия или Ely.by со своим скином.',
+            w6t:'Бесплатно и без рекламы', w6d:'Никаких подписок, баннеров и майнеров. Совсем.',
+            how_title:'Как начать', how_sub:'Три шага — и ты в игре.',
             s1t:'Скачай', s1d:'Один файл AQBLauncher.Setup.exe.',
             s2t:'Запусти', s2d:'Выбери папку, старый лаунчер перенесётся сам.',
             s3t:'Играй', s3d:'Ярлыки создадутся, лаунчер запустится.',
+            faq_title:'Вопрос — ответ', faq_sub:'Коротко о главном.',
+            q1:'Это бесплатно?', a1:'Да, полностью. Никаких подписок, платных функций и рекламы.',
+            q2:'Нужна лицензия Minecraft?', a2:'Можно войти через Microsoft (лицензия) или через Ely.by — со своим скином. Лицензия не обязательна.',
+            q3:'Это безопасно?', a3:'Лаунчер не содержит майнеров и не лезет в систему. Моды качаются напрямую с официальных Modrinth и CurseForge.',
+            q4:'Какие версии и загрузчики?', a4:'Любая версия Minecraft и загрузчики Forge, Fabric, Quilt и NeoForge.',
+            q5:'Как обновляется?', a5:'Сам лаунчер и моды обновляются автоматически — перезаходить и переустанавливать не нужно.',
+            q6:'Можно ставить готовые сборки?', a6:'Да. Есть каталог сборок с Modrinth и CurseForge в один клик, плюс импорт файлов .mrpack и CurseForge .zip.',
+            footer_made:'Сделано aKyBeFf',
             disc:'AQB Launcher — неофициальный проект, не связан с Mojang Studios и Microsoft. Minecraft — товарный знак Mojang AB.' },
-        uk:{ tagline:'Лаунчер Minecraft: збірки, моди та друзі.', download:'Завантажити для Windows', meta:'Windows 10 / 11 · безкоштовно',
-            f1t:'Збірки в один клік', f1d:'Будь-яка версія та завантажувач. Ділись збіркою за кодом.',
-            f2t:'Моди з Modrinth', f2d:'Пошук модів, шейдерів, ресурспаків. Залежності підтягнуться самі.',
-            f3t:'Друзі та чат', f3d:'Спілкуйся й дивись, хто зараз у грі.',
+
+        uk:{ tagline:'Готові збірки, моди та друзі — в одному лаунчері.', download:'Завантажити для Windows', vt:'Перевірка на VirusTotal', meta:'Windows 10 / 11 · безкоштовно',
+            feat_title:'Що вміє AQB', feat_sub:'Усе для модів і збірок — без танців з бубном.',
+            f1t:'Збірки в один клік', f1d:'Готові паки та свої. Будь-яка версія та завантажувач, шеринг за кодом.',
+            f2t:'Моди: Modrinth + CurseForge', f2d:'Пошук модів, шейдерів і ресурспаків з обох майданчиків. Залежності підтягнуться самі.',
+            f3t:'Друзі та чат', f3d:'Спілкуйся й дивись, хто зараз у грі. Збірками можна ділитись.',
             f4t:'Авто-оновлення', f4d:'Лаунчер і моди оновлюються самі, без перезаходу.',
+            why_title:'Чим ми відрізняємось', why_sub:'Не черговий лаунчер «завантаж і мучся».',
+            w1t:'Два майданчики одразу', w1d:'Modrinth І CurseForge в одному вікні — у більшості саморобних лаунчерів лише один.',
+            w2t:'Готові збірки в 1 клік', w2d:'Каталог популярних паків + імпорт .mrpack та CurseForge .zip.',
+            w3t:'Залежності самі', w3d:'Ставиш мод — потрібні бібліотеки докачуються автоматично.',
+            w4t:'Соц-частина вбудована', w4d:'Друзі, чат, статус «у грі» та спільні збірки за кодом.',
+            w5t:'Будь-який вхід', w5d:'Microsoft-ліцензія або Ely.by зі своїм скіном.',
+            w6t:'Безкоштовно й без реклами', w6d:'Жодних підписок, банерів і майнерів. Зовсім.',
+            how_title:'Як почати', how_sub:'Три кроки — і ти у грі.',
             s1t:'Завантаж', s1d:'Один файл AQBLauncher.Setup.exe.',
             s2t:'Запусти', s2d:'Обери папку, старий лаунчер перенесеться сам.',
             s3t:'Грай', s3d:'Ярлики створяться, лаунчер запуститься.',
-            disc:'AQB Launcher — неофіційний проєкт, не пов’язаний з Mojang Studios і Microsoft. Minecraft — торгова марка Mojang AB.' },
-        en:{ tagline:'A Minecraft launcher: modpacks, mods and friends.', download:'Download for Windows', meta:'Windows 10 / 11 · free',
-            f1t:'One-click modpacks', f1d:'Any version and loader. Share a pack by code.',
-            f2t:'Mods from Modrinth', f2d:'Browse mods, shaders, resourcepacks. Dependencies auto-resolve.',
-            f3t:'Friends & chat', f3d:'Chat and see who is in-game right now.',
+            faq_title:'Питання — відповідь', faq_sub:'Коротко про головне.',
+            q1:'Це безкоштовно?', a1:'Так, повністю. Жодних підписок, платних функцій і реклами.',
+            q2:'Потрібна ліцензія Minecraft?', a2:'Можна увійти через Microsoft (ліцензія) або через Ely.by — зі своїм скіном. Ліцензія не обовʼязкова.',
+            q3:'Це безпечно?', a3:'Лаунчер не містить майнерів і не лізе в систему. Моди завантажуються напряму з офіційних Modrinth і CurseForge.',
+            q4:'Які версії та завантажувачі?', a4:'Будь-яка версія Minecraft і завантажувачі Forge, Fabric, Quilt та NeoForge.',
+            q5:'Як оновлюється?', a5:'Сам лаунчер і моди оновлюються автоматично — перезаходити й перевстановлювати не треба.',
+            q6:'Чи можна ставити готові збірки?', a6:'Так. Є каталог збірок з Modrinth і CurseForge в один клік, плюс імпорт файлів .mrpack і CurseForge .zip.',
+            footer_made:'Зроблено aKyBeFf',
+            disc:'AQB Launcher — неофіційний проєкт, не повʼязаний з Mojang Studios і Microsoft. Minecraft — торгова марка Mojang AB.' },
+
+        en:{ tagline:'Ready-made packs, mods and friends — in one launcher.', download:'Download for Windows', vt:'VirusTotal scan', meta:'Windows 10 / 11 · free',
+            feat_title:'What AQB can do', feat_sub:'Everything for mods and packs — no hassle.',
+            f1t:'One-click modpacks', f1d:'Ready-made and your own. Any version and loader, share by code.',
+            f2t:'Mods: Modrinth + CurseForge', f2d:'Browse mods, shaders and resourcepacks from both. Dependencies auto-resolve.',
+            f3t:'Friends & chat', f3d:'Chat and see who is in-game. Packs can be shared.',
             f4t:'Auto-updates', f4d:'Launcher and mods update themselves, no restart.',
+            why_title:'What makes us different', why_sub:'Not just another “download and suffer” launcher.',
+            w1t:'Two platforms at once', w1d:'Modrinth AND CurseForge in one window — most custom launchers have only one.',
+            w2t:'Ready packs in 1 click', w2d:'Catalog of popular packs + import .mrpack and CurseForge .zip.',
+            w3t:'Dependencies handled', w3d:'Install a mod — required libraries download automatically.',
+            w4t:'Social built-in', w4d:'Friends, chat, in-game status and shared packs by code.',
+            w5t:'Any login', w5d:'Microsoft (licensed) or Ely.by with your own skin.',
+            w6t:'Free and ad-free', w6d:'No subscriptions, no banners, no miners. None.',
+            how_title:'How to start', how_sub:'Three steps and you are in-game.',
             s1t:'Download', s1d:'A single AQBLauncher.Setup.exe.',
             s2t:'Run it', s2d:'Pick a folder, your old launcher is migrated.',
             s3t:'Play', s3d:'Shortcuts are created, launcher starts.',
+            faq_title:'FAQ', faq_sub:'The essentials, briefly.',
+            q1:'Is it free?', a1:'Yes, completely. No subscriptions, paid features or ads.',
+            q2:'Do I need a Minecraft license?', a2:'Sign in with Microsoft (licensed) or via Ely.by — with your skin. A license is not required.',
+            q3:'Is it safe?', a3:'The launcher has no miners and does not touch your system. Mods download directly from official Modrinth and CurseForge.',
+            q4:'Which versions and loaders?', a4:'Any Minecraft version and the Forge, Fabric, Quilt and NeoForge loaders.',
+            q5:'How does it update?', a5:'The launcher and mods update automatically — no need to reinstall or restart.',
+            q6:'Can I install ready-made packs?', a6:'Yes. There is a catalog of Modrinth and CurseForge packs in one click, plus import of .mrpack and CurseForge .zip files.',
+            footer_made:'Made by aKyBeFf',
             disc:'AQB Launcher is an unofficial project, not affiliated with Mojang Studios or Microsoft. Minecraft is a trademark of Mojang AB.' },
     };
 
@@ -195,8 +328,6 @@
     document.querySelectorAll('.langs button').forEach(b =>
         b.addEventListener('click', () => setLang(b.dataset.lang, true)));
 
-    // Гео-определение: Украина/Россия/Беларусь/Казахстан -> русский, остальные страны -> английский.
-    // Украинский остаётся ручным выбором. Сохранённый выбор пользователя всегда важнее.
     const RU_COUNTRIES = ['UA','RU','BY','KZ'];
     function geoDefault(){
         return fetch('https://ipapi.co/json/')
@@ -213,16 +344,22 @@
     if (saved && ['ru','uk','en'].includes(saved)) {
         setLang(saved, false);
     } else {
-        setLang('ru', false);                          // временно, пока не пришёл гео-ответ
+        setLang('ru', false);
         geoDefault().then(l => { if (l && !localStorage.getItem('aqb-lang')) setLang(l, false); });
     }
 
-    // версия из последнего релиза
+
     fetch('https://api.github.com/repos/aKyBeFf/launcher/releases/latest')
         .then(r => r.ok ? r.json() : null)
         .then(d => { if(d && d.tag_name){ const v=document.getElementById('ver');
             v.textContent = d.tag_name.startsWith('v')?d.tag_name:('v'+d.tag_name); v.style.display='inline-block'; } })
         .catch(()=>{});
+
+    // плавное появление секций при скролле
+    const io = new IntersectionObserver((entries)=>{
+        entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, { threshold:.12 });
+    document.querySelectorAll('.reveal').forEach((el,i)=>{ el.style.transitionDelay = (i%4*60)+'ms'; io.observe(el); });
 </script>
 </body>
 </html>
